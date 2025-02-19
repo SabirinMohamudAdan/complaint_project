@@ -11,7 +11,7 @@ function Complaint() {
       axios.get("http://localhost:7000/read/comp")
         .then((res) => {
           setData(res.data);
-          navigate("/complain")
+          // navigate("/complain")
         })
         .catch((err) => console.log(err));
     };

@@ -23,7 +23,7 @@ function Home() {
         <h1 className="text-white text-4xl font-bold ml-80 pt-40 ">Welcome to My Website</h1>
      <Link to="/addcomp">
       <button  className="mt-10 px-6 py-3 bg-orange-600 text-white text-2xl
-         rounded ml-96 ">
+         rounded-lg ml-96 ">
         Addcomplaint
         </button></Link>
       </div>
