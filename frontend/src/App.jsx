@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/addcomp" element={<Addcompliant/>}/>
         <Route path="/dash" element={<DisplayDashboard/>}/>
-        <Route path="/complain" element={<Complaint/>}/>
+        {/* <Route path="/complain" element={<Complaint/>}/> */}
       </Routes>
      
     

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import ComplainProps from './ComplainProps';
 import { Link, useNavigate } from 'react-router-dom';
-import Complaint from '../pages/Complaint';
+
 const  DisplayDashboard =()=> {
 
 
