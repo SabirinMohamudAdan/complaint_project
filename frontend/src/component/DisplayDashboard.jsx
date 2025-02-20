@@ -18,6 +18,15 @@ const  DisplayDashboard =()=> {
         .catch((err) => console.log(err));
     };
 
+
+    // delete data
+    const handleremoveData=(id)=>{
+      axios.delete(`http://localhost:3000/students/delete/${id}`).then(()=>{
+        alert("success delete data")
+        handleGetData()
+      }).catch((err)=> console.log(err))
+    }
+
     useEffect(() => {
         handleGetData();
       },[]);
