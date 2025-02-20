@@ -21,7 +21,7 @@ const  DisplayDashboard =()=> {
 
     // delete data
     const handleremoveData=(id)=>{
-      axios.delete(`http://localhost:3000/students/delete/${id}`).then(()=>{
+      axios.delete(`http://localhost:7000/delete/comp/${id}`).then(()=>{
         alert("success delete data")
         handleGetData()
       }).catch((err)=> console.log(err))
