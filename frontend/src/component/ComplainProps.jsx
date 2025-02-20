@@ -11,6 +11,11 @@ const ComplainProps=(props)=> {
             <p className='text-xl mt-6 text-center'>{props.title}</p>
             <p className='text-xl mt-6 ml-2 '>
             {props.message}</p>
+            <div>
+            <i className="fa-solid fa-pen-to-square"></i>
+            <i className="fa-solid fa-trash"></i>
+            </div>
+
 
          </div>
          </div>
