@@ -44,7 +44,8 @@ const  DisplayDashboard =()=> {
             {/* <Complaint/> */}
      {
         data.map((item)=>{
-            return <ComplainProps  name={item.name}  title={item. title}
+            return <ComplainProps  remove={()=> handleremoveData(item._id)}
+             name={item.name}  title={item. title}
             message={item.message}/>
 
         })
