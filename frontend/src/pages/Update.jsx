@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from "axios"
 
 const image =('https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=600');
@@ -10,6 +10,7 @@ function Update() {
      const [name, setName] = useState("");
       const [title, setTitle] = useState("");
       const [message, setMessage] = useState("");
+      const navigate=useNavigate()
 
       const params=useParams()
       const handlsingledata=()=>{
@@ -29,6 +30,7 @@ function Update() {
             "message":message
             }).then(()=>{
                 alert("success update data")
+                navigate("/dash")
             }).catch(err=> console.log(err))
 
       }
