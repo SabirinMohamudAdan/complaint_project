@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ComplainProps=(props)=> {
   return (
@@ -13,7 +14,7 @@ const ComplainProps=(props)=> {
             <p className='text-xl mt-6 ml-2 '>
             {props.message}</p>
             <div className='ml-40 mt-3'>
-            <i className="fa-solid fa-pen-to-square  text-green-700 text-2xl"></i>
+           <Link to={`/update/${props.updatedata}`}> <i  className="fa-solid fa-pen-to-square  text-green-700 text-2xl"></i></Link>
             <i onClick={props.remove} className="fa-solid fa-trash text-red-700 text-2xl ml-4"></i>
             </div>
 
