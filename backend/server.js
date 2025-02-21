@@ -33,6 +33,16 @@ app.get("/read/comp",async(req,res)=>{
     }
 })
 
+// ---------get read single data------------
+app.get("/read/comp/single/:id",async(req,res)=>{
+    const getsingleData= await modelSchema.find({_id:req.params.id})
+    
+    if(getsingleData){
+        res.send(getsingleData)
+    }
+})
+
+
 // ----update data----------------
 app.put("/update/comp/:id",async(req,res)=>{
     const updatedata=await modelSchema .updateOne(
