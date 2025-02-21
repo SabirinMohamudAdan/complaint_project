@@ -28,7 +28,7 @@ function Update() {
             "meassage":message
             }).then(()=>{
                 alert("success update data")
-            }).catch()
+            }).catch(err=> console.log(err))
 
       }
 
