@@ -22,7 +22,10 @@ function Update() {
       }
 
       const handlupdate=()=>{
-        axios.put(`http://localhost:7000/read/comp/${params.id}`)
+        axios.put(`http://localhost:7000/update/comp/${params.id}`,{
+            n
+            
+        })
 
       }
 
