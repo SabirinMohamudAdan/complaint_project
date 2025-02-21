@@ -81,8 +81,8 @@ function Update() {
             type="submit"
             className="w-40 bg-orange-600 text-white py-2 px-4 mt-6 ml-10 rounded-md
              hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
-            Submit
+          >update
+        
           </button>
 
         </form>
