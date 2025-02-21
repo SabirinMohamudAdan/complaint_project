@@ -26,6 +26,8 @@ function Update() {
             "name":name,
             "title":title,
             "meassage":message
+            }).then(()=>{
+                alert("success update data")
             })
 
       }
