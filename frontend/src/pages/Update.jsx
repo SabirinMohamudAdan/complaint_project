@@ -25,7 +25,7 @@ function Update() {
         axios.put(`http://localhost:7000/update/comp/${params.id}`,{
             "name":name,
             "title":title,
-            "mesaage":name,
+            "mesaage":message,
             
 
 
