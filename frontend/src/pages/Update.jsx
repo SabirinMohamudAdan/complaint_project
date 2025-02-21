@@ -21,7 +21,8 @@ function Update() {
         
       }
 
-      const handlupdate=()=>{
+      const handlupdate=(e)=>{
+        e.preventDefault()
         axios.put(`http://localhost:7000/update/comp/${params.id}`,{
             "name":name,
             "title":title,
@@ -77,7 +78,7 @@ function Update() {
               className="mt-4 block w-[260px]  h-30 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
             ></textarea>
           
-          <button 
+          <button  onClick={handlupdate}
             type="submit"
             className="w-40 bg-orange-600 text-white py-2 px-4 mt-6 ml-10 rounded-md
              hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
