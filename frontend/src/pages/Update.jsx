@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
+import axios from "axios"
 
 const image =('https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=600');
 
@@ -9,7 +11,24 @@ function Update() {
       const [title, setTitle] = useState("");
       const [message, setMessage] = useState("");
 
-      
+      const params=useParams()
+      const handlsingledata=()=>{
+        axios.get(`http://localhost:7000/read/comp/single/${params.id}`).then((res)=>{
+            setName(res.data[0].name)
+            setTitle(res.data[0].title)
+            setMessage(res.data[0].message)
+        }).catch((err)=> console.log(err))
+        
+      }
+
+      const handlupdate=()=>{
+        axios.put(`http://localhost:7000/read/comp/${params.id}`)
+
+      }
+
+      useEffect(()=>{
+        handlsingledata()
+      },[])
      
   return (
     <div>
