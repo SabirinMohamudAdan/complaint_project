@@ -6,7 +6,7 @@ const ComplainProps=(props)=> {
     <div>
 
 
-         <div className=' bg-gray-700  w-[250px] h-[240px]  pt-10 text-white
+         <div className=' bg-gray-900  w-[250px] h-[240px]  pt-10 text-white
          rounded-md text-xl mt-20 ml-10 pb-6'>
           <div></div>
             <h1 className='text-center text-2xl'>{props.name}</h1>
